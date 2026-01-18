@@ -4,7 +4,7 @@ $host = 'localhost';
 $db   = 'netflixdb';
 $user = 'root';
 $pass = '';
-$port = 3307;
+$port = 3306;
 
 $conn = new mysqli($host, $user, $pass, $db, $port);
 
@@ -13,4 +13,5 @@ if ($conn->connect_error) {
 }
 
 session_start();
+
 ?>
